@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-5 col-md-12 all-list">
+            <h1>Eat Da Burger!</h1>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control burger-name" placeholder="Enter a burger you want to eat">
+                <div class="input-group-append">
+                    <button id="submit" class="btn btn-outline-secondary" type="button">Submit</button>
+                </div>
+            </div>
+            <ul class="allburgers">
+                {{#each burgers}}
+                {{#unless devoured}}
+                <li><i class="fas fa-hamburger"></i>
+                    <span>&nbsp;&nbsp;</span>{{burger_name}}
+                    <div class="input-group customer-form mt-3">
+                        <input type="text" class="form-control customer-name" placeholder="Customer">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-warning devour" data-id="{{id}}">DEVOUR
+                                IT!</button>
+                        </div>
+                    </div>
+                </li>
+                <hr>
+                {{/unless}}
+                {{/each}}
+            </ul>
+        </div>
+        <div class="col-lg-3 col-md-12 bg"></div>
+        <div class="col-lg-4 col-md-12 bg2">
+            <ul class="eatenburgers">
+                {{#each burgers}}
+                {{#if devoured}}
+                <li><i class="fas fa-utensils"></i> <span>&nbsp;&nbsp;</span>{{burger_name}}
+                    <span>&nbsp;&nbsp;</span>(Eaten by {{Customer.customer_name}})</li>
+                <hr>
+                {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>
