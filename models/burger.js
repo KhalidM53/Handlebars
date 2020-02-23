@@ -9,7 +9,7 @@ module.exports = function(sequelize, DataTypes) {
         type: DataTypes.BOOLEAN,
         defaultValue: false
       }
-    });
+    }, { timestamps:false });
   
     Burger.associate = function(models) {
       Burger.belongsTo(models.Customer, {});

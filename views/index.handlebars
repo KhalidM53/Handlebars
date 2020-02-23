@@ -12,11 +12,11 @@
                 {{#each burgers}}
                 {{#unless devoured}}
                 <li><i class="fas fa-hamburger"></i>
-                    <span>&nbsp;&nbsp;</span>{{burger_name}}
+                    <span>&nbsp;&nbsp;</span>{{dataValues.burger_name}}
                     <div class="input-group customer-form mt-3">
                         <input type="text" class="form-control customer-name" placeholder="Customer">
                         <div class="input-group-append">
-                            <button class="btn btn-outline-warning devour" data-id="{{id}}">DEVOUR
+                            <button class="btn btn-outline-warning devour" data-id={{this.id}}>DEVOUR
                                 IT!</button>
                         </div>
                     </div>

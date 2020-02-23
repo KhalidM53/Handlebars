@@ -4,7 +4,7 @@
     height: 100%;
   }
   .bg {
-    background-image: url("../img/Munch.png");
+   /* background-image: url("../img/Munch.png");*/
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -33,8 +33,8 @@
     font-size: 12px;
   }
   .form-control {
-    background-color: rgb(128, 27, 27);
-    border-color: rgba(255, 255, 255, 0.555);
+    background-color: rgb(243, 171, 77);
+    border-color: rgba(3, 0, 0, 0.555);
     font-size: 20px;
     float: right;
   }
@@ -50,10 +50,10 @@
     list-style-type: none;
   }
   i {
-    color: rgba(255, 255, 255, 0.705);
+    color:black;
   }
   hr {
-    background-color: rgba(255, 255, 255, 0.274);
+    background-color: black;
   }
   .eatenburgers {
     color: rgb(102, 148, 114);
