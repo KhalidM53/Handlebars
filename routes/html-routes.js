@@ -9,7 +9,7 @@ module.exports = function(app) {
       var object = {
         burgers: data
       };
-      console.log(object.burgers[0].dataValues.burger_name)
+      // console.log(object.burgers[0].dataValues.burger_name)
       res.render("index", object);
     });
   });
