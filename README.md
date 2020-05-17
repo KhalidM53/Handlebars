@@ -1,6 +1,6 @@
 # Handlebars
 
-![](eatdaburger)
+![](eatdaburger.png)
 A burger logger application with MySQL, Node, Express, Handlebars using Sequelize ORM with associations.
 
 How to use app
